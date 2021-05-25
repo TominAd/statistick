@@ -2,8 +2,8 @@
 window.onload = function () {
     var firework = JS_FIREWORKS.Fireworks({
         id : 'fireworks-canvas',
-        hue : 120,
-        particleCount : 50,
+        hue : 100,
+        particleCount : 250,
         delay : 0,
         minDelay : 0,
         maxDelay : 20,
@@ -164,7 +164,7 @@ window.onload = function () {
          // spawn firework
          if (_tick === _delay) {
              _fireworks.push(_Firework(
-                 _width * .5,
+                 _width * .90,
                  _height,
                  _randIntRange(_boundaries.left, _boundaries.right),
                  _randIntRange(_boundaries.top, _boundaries.bottom),

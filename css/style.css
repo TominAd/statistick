@@ -1,0 +1,297 @@
+:root{
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --backgroundcolor-team: #21759b;
+    --back-color: #2f303a;
+    --accent-color: #2196F3;
+    --white-color: #ffffff;
+    --color-svg:#AFB1B8;
+    
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+body {
+    
+    color: var(--praimary-text-color);
+    background-color: var(--white-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+} 
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+.body {
+    margin: 0 auto;
+}
+
+.link{
+    text-decoration: none;
+}
+.container {
+    width: 1200px;
+    
+    margin: 0 auto;
+}
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+.header {
+    border-bottom: 1px solid #ECECEC;
+    
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--back-color);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+
+/* =========Page Desc========= */
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 1200px;
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+    background-color: tomato;
+}
+.title-portfolio{
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+.portfolio .text {
+    
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.button-ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+} 
+.btn-div-portfolio{
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+        
+}
+
+.button-ul .item:not(:last-child) {
+    margin-right: 8px;
+
+}
+.button-portfolio{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border-radius: 4px;
+    color: var(--praimary-text-color);
+    background-color: var(--backgroundcolor-team); 
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
+
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+   color: var(--white-color);
+   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.portfolio-ul{
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.portfolio-li {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    
+    background-color: var(--white-color);
+}
+.portfolio-li:hover,
+.portfolio-li:focus{
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.portfolio-ul .portfolio-li:not(:last-child){
+    margin-right: 30px;
+    margin-bottom: 30px;
+    
+
+}
+
+.portfolio-ul .portfolio-li:nth-child(4n) {
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+.portfolio-li-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay{
+    padding-top: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(33, 150, 243, 0.9);
+    color: var(--white-color);
+    padding-bottom: 63px;
+    
+    transform: translateY(100%);
+    /* text */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+}
+
+.portfolio-li-project:hover .overlay,
+.portfolio-li-project:focus .overlay {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+
+
+/* =============END Desc=========== */
+.img-class:hover .overlay,
+.img-class:focus .overlay
+{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity, visibility, pointer-events;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+} 
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px; */
+    
+}
+
+.modal-close-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+/* =============Modal BTN форма для заполнения========= */
